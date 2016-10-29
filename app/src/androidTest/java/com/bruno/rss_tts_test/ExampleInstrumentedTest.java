@@ -1,4 +1,4 @@
-package com.bruno.rss_reader_test;
+package com.bruno.rss_tts_test;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

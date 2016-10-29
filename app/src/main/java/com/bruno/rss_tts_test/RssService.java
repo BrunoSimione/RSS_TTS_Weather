@@ -1,4 +1,4 @@
-package com.bruno.rss_reader_test;
+package com.bruno.rss_tts_test;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import java.util.List;
 
 public class RssService extends IntentService {
 
-    private static final String RSS_LINK = "http://www.pcworld.com/index.rss";
+    private static final String RSS_LINK = "http://www.espn.com/espn/rss/news";
     public static final String ITEMS = "items";
     public static final String ACTION_RSS_PARSED = "com.simplerssreader.ACTION_RSS_PARSED";
 
@@ -28,7 +28,7 @@ public class RssService extends IntentService {
         Log.d(Constants.TAG, "Service started");
         List<RssItem> rssItems = null;
         try {
-            PcWorldRssParser parser = new PcWorldRssParser();
+            RssParser parser = new RssParser();
             rssItems = parser.parse(getInputStream(RSS_LINK));
         } catch (XmlPullParserException | IOException e) {
             Log.w(e.getMessage(), e);
@@ -49,4 +49,6 @@ public class RssService extends IntentService {
             return null;
         }
     }
+
+
 }

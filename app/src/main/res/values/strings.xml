@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RSS_Reader_Test</string>
+    <string name="open_weather_maps_app_id">0a9593e091bb0e9832386e230d986d0b</string>
+    <string name="place_not_found">Sorry, no weather data found.</string>
 </resources>

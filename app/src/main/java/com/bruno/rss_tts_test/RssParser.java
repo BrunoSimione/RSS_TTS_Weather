@@ -1,4 +1,4 @@
-package com.bruno.rss_reader_test;
+package com.bruno.rss_tts_test;
 
 import android.util.Xml;
 
@@ -10,7 +10,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PcWorldRssParser {
+public class RssParser {
 
     private static final String TAG_TITLE = "title";
     private static final String TAG_LINK = "link";

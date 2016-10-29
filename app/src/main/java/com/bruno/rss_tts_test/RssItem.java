@@ -1,4 +1,4 @@
-package com.bruno.rss_reader_test;
+package com.bruno.rss_tts_test;
 
 public class RssItem {
 
